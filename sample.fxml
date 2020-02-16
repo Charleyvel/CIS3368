@@ -10,7 +10,11 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.CheckBox?>
 <HBox fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml" alignment="center">
+    <VBox>
     <ListView fx:id="employeeListView"/>
+        <Button fx:id="deleteSelected" text="Delete Selected" />
+    </VBox>
+
     <VBox>
         <HBox>
             <Label text="First Name" prefWidth="100" />
@@ -25,8 +29,8 @@
             <CheckBox fx:id="isActiveCheckBox"/>
         </HBox>
         <HBox>
-            <Label text="Misc." prefWidth="100" />
-            <TextField prefWidth="150"/>
+            <Button fx:id="clearFields" text="Clear" />
+            <Button fx:id="addFields" text="Add New" />
         </HBox>
     </VBox>
 
